@@ -10,6 +10,7 @@ const App = () => {
   const endDate = new Date().getTime() + 7 * 24 * 60 * 60 * 1000;
   return (
     <div>
+      <div>HELLO WORLD</div>
       <div className="logo">
         <img src={Selinelogo1} id="logo" alt="LOGO" />
       </div>
