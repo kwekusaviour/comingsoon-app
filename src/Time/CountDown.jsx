@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./CountDown.css";
 const Countdown = ({ endDate }) => {
   const [countdown, setCountdown] = useState({
     days: "00",
@@ -7,7 +6,7 @@ const Countdown = ({ endDate }) => {
     minutes: "00",
     seconds: "00",
   });
-  console.log(endDate);
+  // console.log(endDate);
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -50,43 +49,47 @@ const Countdown = ({ endDate }) => {
 
   return (
     <React.Fragment>
-      <div className="countdown-wrapper">
-        <div className="countdown-value">
-          <h1>
+      <div className="flex justify-center gap-30 mt-0 text-white">
+        <div>
+          <h1 className=" text-4xl font-bold">
             {countdown.days}
-            <p className="d">{Number(countdown.days) > 1 ? "DAYS" : "DAY"}</p>
+            <p className="text-sm mt-1">
+              {Number(countdown.days) > 1 ? "DAYS" : "DAY"}
+            </p>
           </h1>
         </div>
 
-        <div className="countdown-value">
-          <h1>
+        <div>
+          <h1 className="text-4xl font-bold">
             {countdown.hours}
-            <p className="h">
+            <p className="text-sm mt-1">
               {Number(countdown.hours) > 1 ? "HOURS" : "HOUR"}
             </p>
           </h1>
         </div>
 
-        <div className="countdown-value">
-          <h1>
+        <div>
+          <h1 className="text-4xl font-bold">
             {countdown.minutes}
-            <p className="m">
+            <p className="text-sm mt-1">
               {Number(countdown.minutes) > 1 ? "MINUTES" : "MINUTE"}
             </p>
           </h1>
         </div>
 
-        <div className="countdown-value">
-          <h1>
+        <div>
+          <h1 className="text-4xl font-bold">
             {countdown.seconds}
-            <p className="s">
+            <p className="text-sm mt-1">
               {Number(countdown.seconds) > 1 ? "SECONDS" : "SECOND"}
             </p>
           </h1>
         </div>
       </div>
 
-      <div className="notification">NOTIFY ME WHEN IT IS READY</div>
+      <div className=" flex justify-center mt-5 text-white font-bold py-1  ">
+        NOTIFY ME WHEN IT IS READY
+      </div>
     </React.Fragment>
   );
 };

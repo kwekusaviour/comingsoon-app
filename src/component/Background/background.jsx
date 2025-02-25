@@ -1,16 +1,17 @@
-import "./background.css";
-const background = () => {
+const Background = () => {
   return (
-    <div>
+    <div className="text-center p-8 md:p-4">
       <div>
-        <h1 className="main-text">
-          <p className="seline">SELINE</p> IS COMING SOON
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">
+          <p className="text-blue-600 flex flex-row justify-center gap-4">
+            SELINE <p className="text-white ">IS COMING SOON</p>
+          </p>
         </h1>
-        <p>
+        <p className="text-white text-lg md:text-xl mb-4 leading-relaxed">
           Our website is under construction, we are working very hard to give
           you the best experience with this one.
         </p>
-        <p>
+        <p className="text-white text-lg md:text-xl leading-relaxed">
           You will love seeing as much as we do. It will morph perfectly on your
           needs!
         </p>
@@ -19,4 +20,4 @@ const background = () => {
   );
 };
 
-export default background;
+export default Background;

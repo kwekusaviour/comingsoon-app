@@ -7,12 +7,12 @@ import Instagram from "../../assets/images/instagram-icon.png";
 import Venmo from "../../assets/images/vimeo-icon.png";
 const Icon = () => {
   return (
-    <div className="icons">
-      <img src={Tweeter} className="tweet" alt="" height={28} />
-      <img src={Facebook} className="fb" alt="" height={20} />
-      <img src={Google} className="G+" alt="" height={28} />
-      <img src={Instagram} className="IG" alt="" height={27} />
-      <img src={Venmo} className="Vm" alt="" height={18} />
+    <div className="flex space-x-10 items-center justify-center">
+      <img src={Tweeter} className="h-7" alt="tweet" />
+      <img src={Facebook} className="h-5" alt="fb" />
+      <img src={Google} className="h-7" alt="G+" />
+      <img src={Instagram} className="h-7" alt="IG" />
+      <img src={Venmo} className="h-4.5" alt="Vm" />
     </div>
   );
 };
