@@ -3,8 +3,6 @@ function PlaceHolder() {
   const [email, setEmail] = useState("");
   return (
     <div className="flex flex-col items-center justify-center p-4">
-      <b></b>
-
       <form className=" max-w-md">
         <input
           type="text"

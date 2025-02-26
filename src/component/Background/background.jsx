@@ -3,9 +3,9 @@ const Background = () => {
     <div className="text-center p-8 md:p-4">
       <div>
         <h1 className="text-4xl md:text-6xl font-bold mb-4">
-          <p className="text-blue-600 flex flex-row justify-center gap-4">
-            SELINE <p className="text-white ">IS COMING SOON</p>
-          </p>
+          <span className="text-blue-600 flex flex-row justify-center gap-4">
+            SELINE <span className="text-white ">IS COMING SOON</span>
+          </span>
         </h1>
         <p className="text-white text-lg md:text-xl mb-4 leading-relaxed">
           Our website is under construction, we are working very hard to give

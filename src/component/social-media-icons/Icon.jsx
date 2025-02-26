@@ -1,5 +1,4 @@
 // import React from "react";
-import "./Icon.css";
 import Tweeter from "../../assets/images/tweeter-icon.png";
 import Facebook from "../../assets/images/facebook-icon.png";
 import Google from "../../assets/images/gmail-icon.png";
