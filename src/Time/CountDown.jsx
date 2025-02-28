@@ -49,45 +49,45 @@ const Countdown = ({ endDate }) => {
 
   return (
     <React.Fragment>
-      <div className="flex justify-center gap-30 mt-0 text-white">
+      <div className="flex justify-center gap-5 sm:gap-16 md:gap-20 lg:gab-24 xl:gap-30 mt-7 text-white">
         <div>
-          <h1 className=" text-4xl font-bold">
+          <h1 className=" text-3xl sm:text-4xl md:text-5xl font-bold">
             {countdown.days}
-            <p className="text-sm mt-1">
+            <p className="text-sm sm:text-base mt-1">
               {Number(countdown.days) > 1 ? "DAYS" : "DAY"}
             </p>
           </h1>
         </div>
 
         <div>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl sm-text-4xl md:text-5xl font-bold">
             {countdown.hours}
-            <p className="text-sm mt-1">
+            <p className="text-sm sm:text-base mt-1">
               {Number(countdown.hours) > 1 ? "HOURS" : "HOUR"}
             </p>
           </h1>
         </div>
 
         <div>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             {countdown.minutes}
-            <p className="text-sm mt-1">
+            <p className="text-sm sm:text-base mt-1">
               {Number(countdown.minutes) > 1 ? "MINUTES" : "MINUTE"}
             </p>
           </h1>
         </div>
 
         <div>
-          <h1 className="text-4xl font-bold">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold">
             {countdown.seconds}
-            <p className="text-sm mt-1">
+            <p className="text-sm sm:text-base mt-1">
               {Number(countdown.seconds) > 1 ? "SECONDS" : "SECOND"}
             </p>
           </h1>
         </div>
       </div>
 
-      <div className=" flex justify-center mt-5 text-white font-bold py-1  ">
+      <div className=" flex justify-center mt-5 text-white font-normal py-1 sm:py-2 md:py-3  ">
         NOTIFY ME WHEN IT IS READY
       </div>
     </React.Fragment>
